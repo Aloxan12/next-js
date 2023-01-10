@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import styles from '../../styles/Navbar.module.scss'
+import {useRouter} from "next/router";
 
 const navigation = [
     {id: 1, title: 'Home', path: '/'},
@@ -7,15 +8,16 @@ const navigation = [
     {id: 3, title: 'Contacts', path: '/contacts'},
 ]
 
-const Navbar = () => (
-    <nav className={styles.nav}>
+const Navbar = () => {
+    const { pathname } = useRouter()
+    return <nav className={styles.nav}>
         <div>Next navbar</div>
         <div className={styles.links}>
             {navigation.map(({id, title, path}) => (
-                <Link href={path} key={id}>{title}</Link>
+                <Link href={path} key={id} className={pathname === path ? styles.active : '' }>{title}</Link>
             ))}
         </div>
     </nav>
-)
+}
 
 export default Navbar

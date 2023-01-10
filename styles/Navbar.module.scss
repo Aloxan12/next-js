@@ -3,4 +3,18 @@
   width: 100%;
   justify-content: space-between;
   padding: 20px;
+
+  .links{
+    display: flex;
+    column-gap: 20px;
+
+    .active{
+      cursor: auto;
+      border-bottom: 2px solid white;
+      pointer-events: none;
+    }
+    &>a:not(.active):hover{
+      border-bottom: 2px solid white;
+    }
+  }
 }
