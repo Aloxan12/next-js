@@ -1,10 +1,11 @@
 import React from 'react';
+import Heading from "./components/Heading";
 
 const Error = () => {
     return (
         <div>
-           <h1>404</h1>
-           <h2>Page not found</h2>
+            <Heading text={'404'} />
+            <Heading tag={'h2'} text={'Page not found'} />
         </div>
     );
 };

@@ -1,7 +1,8 @@
+import Heading from "./components/Heading";
 
 export const Home = ()=>{
   return <div>
-    <h1>Hello world!!</h1>
+    <Heading text={'Hello world!!'}/>
   </div>
 }
 

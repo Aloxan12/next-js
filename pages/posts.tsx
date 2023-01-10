@@ -1,8 +1,9 @@
+import Heading from "./components/Heading";
 
 export const Posts = ()=>{
   return <div>
-    <h1>Post lists:</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    <Heading text={'Post lists:'}/>
+    <Heading text={'Lorem ipsum dolor sit amet, consectetur adipisicing.'} tag={'h3'}/>
   </div>
 }
 
