@@ -14,10 +14,16 @@ export const getStaticProps = async () => {
     }
 }
 
-interface IContact {
+export interface IContact {
     id: number
     email: string
     name: string
+    address: {
+        city: string
+        street: string
+        zipcode: string | number
+        suite: string
+    }
 }
 
 interface IContacts {
@@ -30,7 +36,7 @@ const Contacts = ({contacts}: IContacts) => {
         <ul>
             {!!contacts
                 && contacts
-                    .map(({id, email, name}) =>(
+                    .map(({id, name}) =>(
                         <li key={id}>
                             <Link href={`/contacts/${id}/`}>{name}</Link>
                         </li>

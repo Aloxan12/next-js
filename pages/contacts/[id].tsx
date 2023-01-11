@@ -1,4 +1,3 @@
-import Heading from "../components/Heading";
 import ContactInfo from "../components/ContactInfo";
 
 export const getServerSideProps = async (context: any) => {
@@ -16,12 +15,11 @@ export const getServerSideProps = async (context: any) => {
 }
 
 interface IContact{
-    contact: any
+    contact: IContact
 }
 
 const Contact =({contact}: IContact)=>{
     return <>
-        <Heading text={'Jack'} />
         <ContactInfo contact={contact}/>
     </>
 }

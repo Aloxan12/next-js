@@ -1,8 +1,9 @@
 import React from 'react';
 import Heading from './Heading';
+import {IContact} from "../contacts";
 
 interface IContactInfo{
-    contact: any
+    contact: IContact
 }
 
 const ContactInfo = ({contact}: IContactInfo) => {
