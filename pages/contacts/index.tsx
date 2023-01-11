@@ -17,6 +17,9 @@ const Contacts =()=>{
 
     return <>
         <Heading text={'Contacts list:'}/>
+        <ul>
+            {contacts.map(({id, email, name})=> <li key={id}><strong>{name}</strong>({email})</li>)}
+        </ul>
     </>
 }
 export default Contacts
