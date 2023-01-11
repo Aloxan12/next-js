@@ -27,7 +27,7 @@ interface IPostsProps{
 
 export const Posts = ({posts}: IPostsProps)=>{
     return <>
-        <Heading text={'Contacts list:'}/>
+        <Heading text={'Posts list:'}/>
         <ul>
             {!!posts
                 && posts
