@@ -1,4 +1,5 @@
 import ContactInfo from "../components/ContactInfo";
+import {IContact} from "./index";
 
 export const getServerSideProps = async (context: any) => {
     const { id } = context.params
@@ -14,11 +15,11 @@ export const getServerSideProps = async (context: any) => {
     }
 }
 
-interface IContact{
+interface IContactProps{
     contact: IContact
 }
 
-const Contact =({contact}: IContact)=>{
+const Contact =({contact}: IContactProps)=>{
     return <>
         <ContactInfo contact={contact}/>
     </>
