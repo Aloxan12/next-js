@@ -9,7 +9,7 @@ const Error = () => {
         setTimeout(()=>
             push('/')
         ,5000)
-    },[])
+    },[push])
 
     return (
         <div>
