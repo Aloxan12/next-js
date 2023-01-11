@@ -1,24 +1,33 @@
 import Heading from "../components/Heading";
-import {useEffect, useState} from "react";
 
-const getStaticProps = async ()=>{}
-
-const Contacts =()=>{
-    const [contacts, setContacts] = useState<any[]>([])
-
-    useEffect(()=>{
-        const fetchData = async ()=>{
-            const response = await fetch('https://jsonplaceholder.typicode.com/users')
-            const data = await response.json()
-            setContacts(data)
+export const getStaticProps = async ()=>{
+    const response = await fetch('https://jsonplaceholder.typicode.com/users')
+    const data = await response.json()
+    if(!data){
+        return {
+            notFound: true
         }
-        fetchData()
-    },[])
+    }
+    return {
+        props: {contacts: data}
+    }
+}
 
+interface IContact{
+    id: number
+    email: string
+    name: string
+}
+
+interface IContacts{
+    contacts: IContact[]
+}
+
+const Contacts =({contacts}:IContacts)=>{
     return <>
         <Heading text={'Contacts list:'}/>
         <ul>
-            {contacts.map(({id, email, name})=> <li key={id}><strong>{name}</strong>({email})</li>)}
+            {!!contacts && contacts.map(({id, email, name})=> <li key={id}><strong>{name}</strong>({email})</li>)}
         </ul>
     </>
 }
