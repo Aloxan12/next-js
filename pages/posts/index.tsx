@@ -3,15 +3,21 @@ import Heading from "../components/Heading";
 import {GetStaticProps} from "next";
 
 export const getStaticProps: GetStaticProps = async () => {
-    const response = await fetch('https://jsonplaceholder.typicode.com/posts')
-    const data = await response.json()
-    if (!data) {
-        return {
-            notFound: true
+    try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/posts')
+        const data = await response.json()
+        if (!data) {
+            return {
+                notFound: true
+            }
         }
-    }
-    return {
-        props: {posts: data}
+        return {
+            props: {posts: data}
+        }
+    }catch {
+        return {
+            props: {posts: null}
+        }
     }
 }
 
