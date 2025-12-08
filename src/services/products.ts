@@ -1,5 +1,5 @@
 import { apiFetch } from '@/shared/api/api';
-import { ProductFilters, ProductsResponse } from './types/Products';
+import {Product, ProductFilters, ProductsResponse} from './types/Products';
 
 export const productsService = {
     getProducts: async (filters: ProductFilters): Promise<ProductsResponse> => {
@@ -10,5 +10,9 @@ export const productsService = {
         });
 
         return apiFetch(`/products/search?${params}`);
+    },
+
+    getProductDetail: async (params: {id: string}): Promise<Product> => {
+        return apiFetch(`/products/${params.id}`);
     },
 };

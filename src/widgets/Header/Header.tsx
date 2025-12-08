@@ -8,7 +8,7 @@ export const Header = () => {
             <div className={cls.title}>Title our site</div>
 
             <nav className={cls.navWrap}>
-                <Link className={cls.link} href='/public'>Главная</Link>
+                <Link className={cls.link} href='/'>Главная</Link>
                 <Link className={cls.link} href='/products'>Продукты</Link>
                 <Link className={cls.link} href='/categories'>Категории</Link>
                 <Link className={cls.link} href='/users'>Пользователи</Link>

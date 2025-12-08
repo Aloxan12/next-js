@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25ff1f8d-fac7-4d2a-b517-8fc39963fdf1" name="Changes" comment="new">
+      <change afterPath="$PROJECT_DIR$/src/app/products/[id]/loading.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/products/[id]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Products/ui/ProductDetail/ProductDetail.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Products/ui/ProductDetail/ProductDetail.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Products/ui/ProductItem/ProductItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Products/ui/ProductItem/ProductItem.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/products/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/products/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Products/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Products/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Products/ui/ProductItem/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Products/ui/ProductItem/ProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Products/ui/ProductList/ProductList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Products/ui/ProductList/ProductList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/products.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/products.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/types/PageParams.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/types/PageParams.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/widgets/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/Header/Header.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +57,7 @@
     "git-widget-placeholder": "main",
     "js.debugger.nextJs.config.created.client": "true",
     "js.debugger.nextJs.config.created.server": "true",
-    "last_opened_file_path": "C:/Users/Aleksey/Desktop/git/Next/next-js/src/entities/Products/ui/ProductItem",
+    "last_opened_file_path": "C:/Users/Aleksey/Desktop/git/Next/next-js/src/entities/Products/ui/ProductDetail",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,11 +78,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Aleksey\Desktop\git\Next\next-js\src\entities\Products\ui\ProductDetail" />
+      <recent name="C:\Users\Aleksey\Desktop\git\Next\next-js\src\app\products\[id]" />
       <recent name="C:\Users\Aleksey\Desktop\git\Next\next-js\src\entities\Products\ui\ProductItem" />
       <recent name="C:\Users\Aleksey\Desktop\git\Next\next-js\src\entities\Products\ui\ProductList" />
       <recent name="C:\Users\Aleksey\Desktop\git\Next\next-js" />
-      <recent name="C:\Users\Aleksey\Desktop\git\Next\next-js\src\components\Header" />
-      <recent name="C:\Users\Aleksey\Desktop\git\Next\next-js\src\app\products" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Aleksey\Desktop\git\Next\next-js\src\widgets" />
@@ -132,7 +142,7 @@
       <workItem from="1676285217898" duration="582000" />
       <workItem from="1764933457148" duration="19505000" />
       <workItem from="1765189697307" duration="419000" />
-      <workItem from="1765190121027" duration="3538000" />
+      <workItem from="1765190121027" duration="7333000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1672439339309</created>
@@ -334,7 +344,23 @@
       <option name="project" value="LOCAL" />
       <updated>1765194859641</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="new">
+      <option name="closed" value="true" />
+      <created>1765195241047</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1765195241047</updated>
+    </task>
+    <task id="LOCAL-00030" summary="new">
+      <option name="closed" value="true" />
+      <created>1765195243956</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1765195243956</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

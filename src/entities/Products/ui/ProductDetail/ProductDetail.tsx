@@ -1,12 +1,12 @@
 import {Product} from "@/services/types/Products";
-import cls from './ProductItem.module.scss'
 import Link from "next/link";
+import cls from "./ProductDetail.module.scss";
 
-interface ProductItemProps {
+interface ProductDetailProps {
     product: Product;
 }
 
-export default function ProductItem({product}: ProductItemProps) {
+export default function ProductDetail({product}: ProductDetailProps) {
 
     return (
         <Link href={`/products/${product.id}`} passHref>

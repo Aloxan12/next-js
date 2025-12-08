@@ -1,6 +1,8 @@
 import {ProductList} from "@/entities/Products";
 import {PageParams} from "@/shared/types/PageParams";
 import { Metadata } from "next";
+import {ProductFilters} from "@/services/types/Products";
+import {productsService} from "@/services/products";
 
 export async function generateMetadata({ searchParams }: PageParams): Promise<Metadata> {
     const params = await searchParams;
@@ -16,10 +18,19 @@ export async function generateMetadata({ searchParams }: PageParams): Promise<Me
 }
 
 export default async function Products({ searchParams }: PageParams) {
-    const resolvedParams = await searchParams;
+    const resolvedParams: ProductFilters = await searchParams;
+
+    const filters: ProductFilters = {
+        q: resolvedParams.q || '',
+        page: resolvedParams?.page || 1,
+        limit: resolvedParams?.limit || 10,
+    };
+
+    const products = await productsService.getProducts(filters);
+
     return (
     <div>
-        <ProductList searchParams={resolvedParams} />
+        <ProductList initProducts={products} />
     </div>
   );
 }
