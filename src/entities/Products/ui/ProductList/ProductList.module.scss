@@ -1,10 +1,12 @@
 .productList{
   position: relative;
-  padding: 40px 20px 20px 20px;
+  padding: 40px 200px 20px 200px;
+  height: 100%;
+  overflow: auto;
 
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 26px;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
 
 
   .total{

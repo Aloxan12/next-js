@@ -5,37 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25ff1f8d-fac7-4d2a-b517-8fc39963fdf1" name="Changes" comment="new">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eslint.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/file.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/globe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/next.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vercel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/window.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/not-found.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/page.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/products/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/sitemap.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Products/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Products/ui/ProductItem/ProductItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Products/ui/ProductList/ProductList.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/Products/ui/ProductList/ProductList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/products.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/types/Products.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/api/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/types/PageParams.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/Header/Header.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/Header/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Products/ui/ProductItem/ProductItem.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/products/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/products/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/sitemap.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/sitemap.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Products/ui/ProductItem/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Products/ui/ProductItem/ProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Products/ui/ProductList/ProductList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Products/ui/ProductList/ProductList.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +53,7 @@
     "git-widget-placeholder": "main",
     "js.debugger.nextJs.config.created.client": "true",
     "js.debugger.nextJs.config.created.server": "true",
-    "last_opened_file_path": "C:/Users/Aleksey/Desktop/git/Next/next-js/src/entities/Products/ui/ProductList",
+    "last_opened_file_path": "C:/Users/Aleksey/Desktop/git/Next/next-js/src/entities/Products/ui/ProductItem",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -97,11 +74,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Aleksey\Desktop\git\Next\next-js\src\entities\Products\ui\ProductItem" />
       <recent name="C:\Users\Aleksey\Desktop\git\Next\next-js\src\entities\Products\ui\ProductList" />
       <recent name="C:\Users\Aleksey\Desktop\git\Next\next-js" />
       <recent name="C:\Users\Aleksey\Desktop\git\Next\next-js\src\components\Header" />
       <recent name="C:\Users\Aleksey\Desktop\git\Next\next-js\src\app\products" />
-      <recent name="C:\Users\Aleksey\Desktop\git\Next\next-js\styles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Aleksey\Desktop\git\Next\next-js\src\widgets" />
@@ -160,7 +137,8 @@
       <workItem from="1673523750328" duration="149000" />
       <workItem from="1676285217898" duration="582000" />
       <workItem from="1764933457148" duration="19505000" />
-      <workItem from="1765189697307" duration="343000" />
+      <workItem from="1765189697307" duration="419000" />
+      <workItem from="1765190121027" duration="3120000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1672439339309</created>
@@ -338,7 +316,23 @@
       <option name="project" value="LOCAL" />
       <updated>1764933513988</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="new">
+      <option name="closed" value="true" />
+      <created>1765190062384</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1765190062384</updated>
+    </task>
+    <task id="LOCAL-00027" summary="new">
+      <option name="closed" value="true" />
+      <created>1765190073279</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1765190073279</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

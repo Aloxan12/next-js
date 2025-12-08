@@ -15,10 +15,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     return [
         { url: baseUrl, priority: 1 },
+        { url: `${baseUrl}/products`, priority: 0.9 },
 
-        // ✅ Site URL!
         ...generatePages('/products', Math.ceil(products.total / 10), baseUrl),
-    ];
+    ] as MetadataRoute.Sitemap;
 }
 
 function generatePages(
